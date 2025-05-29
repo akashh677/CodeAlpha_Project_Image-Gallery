@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Filtered Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 class="main-title">Gallery</h1>
+
+
+  <!-- Filter Buttons -->
+  <div class="filter-buttons">
+    <button onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('nature')">Nature</button>
+    <button onclick="filterGallery('cars')">Cars</button>
+    <button onclick="filterGallery('animals')">Animals</button>
+  </div>
+
+  <!-- Upload Image -->
+  <div class="upload-box">
+    <input type="file" id="uploadInput" accept="image/*" />
+    <button onclick="uploadImage()">Upload Image</button>
+  </div>
+
+  <!-- Image Gallery -->
+  <div class="gallery" id="gallery">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Nature-Img-1.jpg.jpeg" class="nature" alt="Nature">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Car-Img-1.jpg.jpeg" class="cars" alt="Cars">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Animal-Img-1.jpg.jpeg" class="animals" alt="Animals">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Nature-Img-2.jpg.jpeg" class="nature" alt="Nature">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Car-Img-2.jpg.jpeg" class="cars" alt="Cars">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Animal-Img-2.jpg.jpeg" class="animals" alt="Animals">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Nature-Img-3.jpg.jpg" class="nature" alt="Nature">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Car-Img-3.jpg.jpeg" class="cars" alt="Cars">
+    <img src="D:\CodeAlpha\CodeAlpha_Project_Image Gallery\Images\Animal-Img-3.jpg.jpeg" class="animals" alt="Animals">
+  </div>
+
+  <!-- Lightbox Viewer -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="">
+    <div class="controls">
+      <button onclick="prevImage()">⟨</button>
+      <button onclick="nextImage()">⟩</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
